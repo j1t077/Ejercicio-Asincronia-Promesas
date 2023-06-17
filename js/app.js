@@ -23,7 +23,7 @@ const loadJSON = async (url) => {
 
 const tableBody = document.getElementById("table-body");
 
-loadJSON("../../titulos.json")
+loadJSON("../titulos.json")
   .then((data) => {
     data.results.forEach((todo) => {
       const row = document.createElement("tr");
