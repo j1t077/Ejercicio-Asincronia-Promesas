@@ -23,7 +23,7 @@ const loadJSON = async (url) => {
 
 const tableBody = document.getElementById("table-body");
 
-loadJSON("../titulos.json")
+loadJSON("https://raw.githubusercontent.com/j1t077/Ejercicio-Asincronia-Promesas/main/titulos.json")
   .then((data) => {
     data.results.forEach((todo) => {
       const row = document.createElement("tr");
